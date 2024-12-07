@@ -21,18 +21,24 @@ This repository contains a curated list of papers on evaluating LLMs and agents 
 
 ## Artificial Intelligence and Data Science
 
-| **Paper**        | **Num of Evaluation Examples** | **R&D Tasks**   | **Source**           | **Ecological Validity** | **Contamination Risk** | **Human Performance** | **Time Horizon** |
-|------------------|--------------------------------|-----------------|----------------------|-------------------------|------------------------|-----------------------|------------------|
-| MLAgentBench     | 13                             | Code Generation | Kaggle               | N/A                     | Medium                 | N/A                   | -                |
-| MLE-Bench        | 75                             | Code Generation | Kaggle               | N/A                     | Medium                 | N/A                   | -                |
-| RE-Bench         | 7                              | Code Generation | Created From Scratch | Expert Curation         | Low                    | Yes                   | 8h               |
-| DSBench          | 540                            | Code Generation | Kaggle               | N/A                     | High                   | N/A                   | -                |
-| DA-Code          | 500                            | Code Generation | Kaggle, Github, Web  | N/A                     | Medium                 | N/A                   | -                |
-| Si et al., 2024  |                                | Idea Generation |                      |                         |                        |                       |                  |
-| Review Critique  |                                | Paper Reviewing |                      |                         |                        |                       |                  |
-| The AI Scientist |                                | R&D Workflow    |                      |                         |                        |                       |                  |
-| MLR-copilot      |                                | R&D Workflow    |                      |                         |                        |                       |                  |
-| AAAR-1.0         |                                | R&D Workflow    |                      |                         |                        |                       |                  |
+| **Paper**        | **Num of Evaluation Examples** | **R&D Tasks**   | **Source**              | **Ecological Validity** | **Contamination Risk** | **Human Performance** | **Time Horizon** |
+|------------------|--------------------------------|-----------------|-------------------------|-------------------------|------------------------|-----------------------|------------------|
+| MLAgentBench     | 13                             | Code Generation | Kaggle, Recent Research | N/A                     | Medium                 | N/A                   | -                |
+| MLE-Bench        | 75                             | Code Generation | Kaggle                  | N/A                     | Medium                 | N/A                   | -                |
+| RE-Bench         | 7                              | Code Generation | Created From Scratch    | Expert Curation         | Low                    | Yes                   | 8h               |
+| DSBench          | 540                            | Code Generation | Eloquence, Kaggle       | N/A                     | High                   | N/A                   | -                |
+| DA-Code          | 500                            | Code Generation | Kaggle, Github, Web     | N/A                     | Medium                 | N/A                   | -                |
+| Si et al., 2024  |                                | Idea Generation |                         |                         |                        |                       |                  |
+| Review Critique  |                                | Paper Reviewing |                         |                         |                        |                       |                  |
+| The AI Scientist |                                | R&D Workflow    |                         |                         |                        |                       |                  |
+| MLR-copilot      |                                | R&D Workflow    |                         |                         |                        |                       |                  |
+| AAAR-1.0         |                                | R&D Workflow    |                         |                         |                        |                       |                  |
+
+- MLAgentBench (Huang et al., 2024a): Edit programs in a given workspace, which also contains the dataset needed, to complete the specified machine learning problem. 
+- MLE-Bench (Chan et al., 2024): Train machine learning models to maximize their performance on adapted Kaggle challenges.
+- RE-Bench (Wijk et al., 2024): Compare LLM-based agents' performance against human experts on machine learning R&D tasks in the same programming environment.
+- DSBench (Jing et al., 2024): Answer data analysis or modeling questions by writing programs to derive the solutions.
+- DA-Code (Huang et al., 2024b): Write Python programs and SQL queries to solve complex Data Science tasks, including data wrangling, machine learning, and so on.
 
 
 ## Full Bibliography
