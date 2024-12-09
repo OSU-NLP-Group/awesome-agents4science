@@ -1,45 +1,47 @@
-# Awesome Papers on Evaluating LLMs and Agents for Scientific R&D
+# Awesome Papers on Agents for Science
 
 This repository contains a curated list of papers on evaluating LLMs and agents for scientific research and development. It is maintained by [Ziru Chen](https://github.com/ronch99) and will be regularly updated.
 
-## General Scientific R&D
+## Table of Contents
+TODO
 
-| **Paper**         | **Num of Eval Examples** | **R&D Tasks**         | **Source**                    | **Ecological Validity** | **Contamination Risk** | **Human Performance** | **Time Horizon** |
-|-------------------|--------------------------|-----------------------|-------------------------------|-------------------------|------------------------|-----------------------|------------------|
-| Discovery Bench    | 239 (Real) / 903 (Synth)       | Code Generation       | Publications                  | N/A                     | Medium                 | N/A                   | -              |
-| SciCode           | 80                             | Code Generation       | Publications                  | Expert Validated        | Low                    | N/A                   | -              |
-| BLADE             | 12                             | Code Generation       | Publications                  | Expert Validated        | Medium                 | N/A                   | -              |
-| ScienceAgent Bench | 102                            | Code Generation       | Publications                  | Expert Validated        | Low                    | N/A                   | 2.5-3h           |
-| OpenD5            | 675                            | Hypothesis Generation | Publications, Courses, Kaggle | N/A                     | Medium                 | N/A                   | -              |
+## Benchmarks and Evaluation
+
+| **Paper**          | **Scientific Domains**                                                                                           | **Num of Evaluation Examples** | **R&D Tasks**         | **Source**                    | **Ecological Validity** | **Contamination Risk** | **Human Performance** | **Time Horizon** |
+|--------------------|------------------------------------------------------------------------------------------------------------------|--------------------------------|-----------------------|-------------------------------|-------------------------|------------------------|-----------------------|------------------|
+| Discovery Bench    | Sociology, Biology, Economics, Engineering, Meta-science, Humanities                                             | 239 (Real) / 903 (Synth)       | Code Generation       | Publications                  | N/A                     | Medium                 | N/A                   | -                |
+| SciCode            | Mathematics, Physics, Biology, Chemistry, Material Science                                                       | 80                             | Code Generation       | Publications                  | Expert Validated        | Low                    | N/A                   | -                |
+| BLADE              | Behavioral Sciences, Finance and Economics, Demographics, Education, Health and Well-being, Evolutionary Biology | 12                             | Code Generation       | Publications                  | Expert Validated        | Medium                 | N/A                   | -                |
+| ScienceAgent Bench | Bioinformatics, Computational Chemistry, Geographical Information Science, Psychology and Cognitive NeuroScience | 102                            | Code Generation       | Publications                  | Expert Validated        | Low                    | N/A                   | 2.5-3h           |
+| OpenD5             | Business, Social Sciences, Humanities, Health, Machine Learning                                                  | 675                            | Hypothesis Generation | Publications, Courses, Kaggle | N/A                     | Medium                 | N/A                   | -                |
+| MLAgentBench       | Machine Learning                                                                                                 | 13                             | Code Generation       | Kaggle, Recent Research       | N/A                     | Medium                 | N/A                   | -                |
+| MLE-Bench          | Machine Learning                                                                                                 | 75                             | Code Generation       | Kaggle                        | N/A                     | Medium                 | N/A                   | -                |
+| RE-Bench           | Machine Learning                                                                                                 | 7                              | Code Generation       | Created From Scratch          | Expert Curation         | Low                    | Yes                   | 8h               |
+| DSBench            | Data Science                                                                                                     | 540                            | Code Generation       | Eloquence, Kaggle             | N/A                     | High                   | N/A                   | -                |
+| DA-Code            | Data Science                                                                                                     | 500                            | Code Generation       | Kaggle, Github, Web           | N/A                     | Medium                 | N/A                   | -                |
+| Si et al., 2024    |                                                                                                                  |                                | Idea Generation       |                               |                         |                        |                       |                  |
+| Review Critique    |                                                                                                                  |                                | Paper Reviewing       |                               |                         |                        |                       |                  |
+| The AI Scientist   |                                                                                                                  |                                | R&D Workflow          |                               |                         |                        |                       |                  |
+| MLR-copilot        |                                                                                                                  |                                | R&D Workflow          |                               |                         |                        |                       |                  |
+| AAAR-1.0           |                                                                                                                  |                                | R&D Workflow          |                               |                         |                        |                       |                  |
+
 
 - DiscoveryBench (Majumder et al., 2024): Derive data-driven discovery hypothesis for a given research goal/question by generating workflows and programs to analyze data.
 - SciCode (Tian et al., 2024): Write code functions based on scientific knowledge and reasoning to perform corresponding scientific compuation tasks.
 - BLADE (Gu et al., 2024): Compose a data analysis report for the given research question containing conceptual variables, data transformations, and statistical modeling.
 - ScienceAgentBench (Chen et al., 2024): Generate stand-alone programs for solving data-driven discovery tasks, including data processing, model development, data analysis, and information visualization.
 - OpenD5 (Zhong et al., 2023): Propose a natural language hypothesis based on a given corpus pair to address the given discovery goal.
-
-
-## Artificial Intelligence and Data Science
-
-| **Paper**        | **Num of Evaluation Examples** | **R&D Tasks**   | **Source**              | **Ecological Validity** | **Contamination Risk** | **Human Performance** | **Time Horizon** |
-|------------------|--------------------------------|-----------------|-------------------------|-------------------------|------------------------|-----------------------|------------------|
-| MLAgentBench     | 13                             | Code Generation | Kaggle, Recent Research | N/A                     | Medium                 | N/A                   | -                |
-| MLE-Bench        | 75                             | Code Generation | Kaggle                  | N/A                     | Medium                 | N/A                   | -                |
-| RE-Bench         | 7                              | Code Generation | Created From Scratch    | Expert Curation         | Low                    | Yes                   | 8h               |
-| DSBench          | 540                            | Code Generation | Eloquence, Kaggle       | N/A                     | High                   | N/A                   | -                |
-| DA-Code          | 500                            | Code Generation | Kaggle, Github, Web     | N/A                     | Medium                 | N/A                   | -                |
-| Si et al., 2024  |                                | Idea Generation |                         |                         |                        |                       |                  |
-| Review Critique  |                                | Paper Reviewing |                         |                         |                        |                       |                  |
-| The AI Scientist |                                | R&D Workflow    |                         |                         |                        |                       |                  |
-| MLR-copilot      |                                | R&D Workflow    |                         |                         |                        |                       |                  |
-| AAAR-1.0         |                                | R&D Workflow    |                         |                         |                        |                       |                  |
-
 - MLAgentBench (Huang et al., 2024a): Edit programs in a given workspace, which also contains the dataset needed, to complete the specified machine learning problem. 
 - MLE-Bench (Chan et al., 2024): Train machine learning models to maximize their performance on adapted Kaggle challenges.
 - RE-Bench (Wijk et al., 2024): Compare LLM-based agents' performance against human experts on machine learning R&D tasks in the same programming environment.
 - DSBench (Jing et al., 2024): Answer data analysis or modeling questions by writing programs to derive the solutions.
 - DA-Code (Huang et al., 2024b): Write Python programs and SQL queries to solve complex Data Science tasks, including data wrangling, machine learning, and so on.
 
+## Language Agents
+TODO
+
+## Prospectives
+TODO
 
 ## Full Bibliography
 
