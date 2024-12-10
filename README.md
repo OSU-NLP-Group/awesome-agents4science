@@ -27,9 +27,9 @@ This repository contains a curated list of papers on evaluating LLMs and agents 
 | RE-Bench           | Machine Learning                                                                                                 | 7                              | Code Generation       | Created From Scratch          | Expert Curation         | Low                    | Yes                   | 8h               |
 | DSBench            | Data Science                                                                                                     | 540                            | Code Generation       | Eloquence, Kaggle             | N/A                     | High                   | N/A                   | -                |
 | DA-Code            | Data Science                                                                                                     | 500                            | Code Generation       | Kaggle, Github, Web           | N/A                     | Medium                 | N/A                   | -                |
-| Si et al., 2024    |                                                                                                                  |                                | Idea Generation       |                               |                         |                        |                       |                  |
-| Review Critique    |                                                                                                                  |                                | Paper Reviewing       |                               |                         |                        |                       |                  |
-| AAAR-1.0           |                                                                                                                  |                                | R&D Workflow          |                               |                         |                        |                       |                  |
+| CHIME              | Biomedicine                                                                                                      | 472 (100 expert annotated)     |Literature Review      | Publications                  | Subset Expert Validated | Low                    | N/A                   | -                |
+| Qi et al., 2023    | Biomedical                                                                                                       | 2700 (SFT) 200 (Eval)          |  Hypothesis Generation| Publications                  | N/A                     | Low                    | N/A                   |     -            |
+| AAAR-1.0           | Artificial Intelligence                                                                                          | 1049 (Equation Inference) 100 (Experiment Design) 993 (Paper Weakness) 11,376 (Review Critique) | R&D Workflow          | Publications, OpenReview | Expert Validated | High | N/A | -  |
 
 - **DiscoveryBench (Majumder et al., 2024)**: Derive data-driven discovery hypothesis for a given research goal/question by generating workflows and programs to analyze data.
 
@@ -50,6 +50,12 @@ This repository contains a curated list of papers on evaluating LLMs and agents 
 - **DSBench (Jing et al., 2024)**: Answer data analysis or modeling questions by writing programs to derive the solutions.
 
 - **DA-Code (Huang et al., 2024b)**: Write Python programs and SQL queries to solve complex Data Science tasks, including data wrangling, machine learning, and so on.
+
+- **CHIME (Hsu et al., 2024)**: Produce hierarchical organizations of scientific studies to assist researchers with literature review. 
+
+- **Qi el al., 2023**: Propose hypothesis in biomedical research. 
+
+- **AAAR-1.0 (Lou at al., 2024)**: Assess correctness of equations based on context, design experiments to validate research ideas and solutions, identify weaknesses in paper submissions, identify whether each segment in human reviews is deficient or not. 
 
 
 ## Agents for Science
