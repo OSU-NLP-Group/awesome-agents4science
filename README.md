@@ -1,6 +1,6 @@
 # Awesome Papers on Agents for Science
 
-This repository contains a curated list of papers on evaluating LLMs and agents for scientific research and development. It is maintained by [Ziru Chen](https://github.com/ronch99) and will be regularly updated.
+This repository contains a curated list of papers on LLMs and agents for scientific research and development. It is maintained by [Ziru Chen](https://github.com/ronch99) and will be regularly updated.
 
 ## Table of Contents
 - [Benchmarks and Evaluation](#benchmarks-and-evaluation)
