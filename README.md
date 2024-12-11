@@ -60,9 +60,10 @@ $^*$ Ecological validity refers to how well the results of a study can be applie
 
 - **OpenD5 (Zhong et al., 2023)**: Propose a natural language hypothesis based on a given corpus pair to address the given discovery goal.
 
-- **AAAR-1.0 (Lou at al., 2024)**: Evaluate large language models on four tasks in R&D workflow: assess correctness of equations based on context, design experiments to validate research ideas and solutions, identify weaknesses in paper submissions, and identify whether each segment in human reviews is deficient or not.
-
 - **ReviewCritique (Du et al., 2024)**: Examine LLMs ability to assist in paper (meta-)reviewing and its recognizability.  
+
+
+- **AAAR-1.0 (Lou at al., 2024)**: Evaluate large language models on four tasks in R&D workflow: assess correctness of equations based on context, design experiments to validate research ideas and solutions, identify weaknesses in paper submissions, and identify whether each segment in human reviews is deficient or not.
 
 
 ## Agents for Science
