@@ -15,21 +15,25 @@ This repository contains a curated list of papers on evaluating LLMs and agents 
 
 ## Benchmarks and Evaluation
 
-| **Paper**          | **Scientific Domains**                                                                                           | **Num of Evaluation Examples** | **R&D Tasks**         | **Source**                    | **Ecological Validity** | **Contamination Risk** | **Human Performance** | **Time Horizon** |
+| **Paper**          | **Scientific Domains**                                                                                           | **Num of Evaluation Examples** | **R&D Tasks**         | **Source**                    | **Ecological Validity**$^*$ | **Contamination Risk** | **Human Performance** | **Time Horizon** |
 |--------------------|------------------------------------------------------------------------------------------------------------------|--------------------------------|-----------------------|-------------------------------|-------------------------|------------------------|-----------------------|------------------|
-| Discovery Bench    | Sociology, Biology, Economics, Engineering, Meta-science, Humanities                                             | 239 (Real) / 903 (Synth)       | Code Generation       | Publications                  | N/A                     | Medium                 | N/A                   | -                |
-| SciCode            | Mathematics, Physics, Biology, Chemistry, Material Science                                                       | 80                             | Code Generation       | Publications                  | Expert Validated        | Low                    | N/A                   | -                |
-| BLADE              | Behavioral Sciences, Finance and Economics, Demographics, Education, Health and Well-being, Evolutionary Biology | 12                             | Code Generation       | Publications                  | Expert Validated        | Medium                 | N/A                   | -                |
-| ScienceAgent Bench | Bioinformatics, Computational Chemistry, Geographical Information Science, Psychology and Cognitive NeuroScience | 102                            | Code Generation       | Publications                  | Expert Validated        | Low                    | N/A                   | 2.5-3h           |
-| OpenD5             | Business, Social Sciences, Humanities, Health, Machine Learning                                                  | 675                            | Hypothesis Generation | Publications, Courses, Kaggle | N/A                     | Medium                 | N/A                   | -                |
-| MLAgentBench       | Machine Learning                                                                                                 | 13                             | Code Generation       | Kaggle, Recent Research       | N/A                     | Medium                 | N/A                   | -                |
-| MLE-Bench          | Machine Learning                                                                                                 | 75                             | Code Generation       | Kaggle                        | N/A                     | Medium                 | N/A                   | -                |
-| RE-Bench           | Machine Learning                                                                                                 | 7                              | Code Generation       | Created From Scratch          | Expert Curation         | Low                    | Yes                   | 8h               |
-| DSBench            | Data Science                                                                                                     | 540                            | Code Generation       | Eloquence, Kaggle             | N/A                     | High                   | N/A                   | -                |
-| DA-Code            | Data Science                                                                                                     | 500                            | Code Generation       | Kaggle, Github, Web           | N/A                     | Medium                 | N/A                   | -                |
-| CHIME              | Biomedicine                                                                                                      | 472 (100 expert annotated)     |Literature Review      | Publications                  | Subset Expert Validated | Low                    | N/A                   | -                |
-| Qi et al., 2023    | Biomedicine                                                                                                       | 2700 (SFT) 200 (Eval)          |  Hypothesis Generation| Publications                  | N/A                     | Low                    | N/A                   |     -            |
-| AAAR-1.0           | Artificial Intelligence                                                                                          | 1049 (Equation Inference) 100 (Experiment Design) 993 (Paper Weakness) 11,376 (Review Critique) | R&D Workflow          | Publications, OpenReview | Expert Validated | High | N/A | -  |
+| [Discovery Bench](https://arxiv.org/abs/2407.01725) | Sociology, Biology, Economics, Engineering, Meta-science, Humanities                                             | 239 (Real) / 903 (Synth)       | Code Generation       | Publications                  | N/A                     | Medium                 | N/A                   | -                |
+| [SciCode](https://arxiv.org/abs/2407.13168)         | Mathematics, Physics, Biology, Chemistry, Material Science                                                       | 80                             | Code Generation       | Publications                  | Expert Validated        | Low                    | N/A                   | -                |
+| [BLADE](https://arxiv.org/abs/2408.09667)          | Behavioral Sciences, Finance and Economics, Demographics, Education, Health and Well-being, Evolutionary Biology | 12                             | Code Generation       | Publications                  | Expert Validated        | Medium                 | N/A                   | -                |
+| [ScienceAgent Bench](https://arxiv.org/abs/2410.05080) | Bioinformatics, Computational Chemistry, Geographical Information Science, Psychology and Cognitive NeuroScience | 102                            | Code Generation       | Publications                  | Expert Validated        | Low                    | N/A                   | 2.5-3h           |
+| [MLAgentBench](https://arxiv.org/abs/2310.03302)   | Machine Learning                                                                                                 | 13                             | Code Generation       | Kaggle, Recent Research       | N/A                     | Medium                 | N/A                   | -                |
+| [MLE-Bench](https://arxiv.org/abs/2410.07095)      | Machine Learning                                                                                                 | 75                             | Code Generation       | Kaggle                        | N/A                     | Medium                 | N/A                   | -                |
+| [RE-Bench](https://arxiv.org/abs/2411.15114)       | Machine Learning                                                                                                 | 7                              | Code Generation       | Created From Scratch          | Expert Curation         | Low                    | Yes                   | 8h               |
+| [DSBench](https://arxiv.org/abs/2409.07703)        | Data Science                                                                                                     | 540                            | Code Generation       | Eloquence, Kaggle             | N/A                     | High                   | N/A                   | -                |
+| [DA-Code](https://arxiv.org/abs/2410.07331)        | Data Science                                                                                                     | 500                            | Code Generation       | Kaggle, Github, Web           | N/A                     | Medium                 | N/A                   | -                |
+| [CHIME](https://arxiv.org/abs/2404.02831)          | Biomedicine                                                                                                      | 472 (100 expert annotated)     | Literature Review     | Publications                  | Subset Expert Validated | Low                    | N/A                   | -                |
+| [Qi et al., 2023](https://arxiv.org/abs/2402.13225) | Biomedicine                                                                                                       | 200          | Hypothesis Generation | Publications                  | N/A                     | Low                    | N/A                   | -                |
+| [OpenD5](https://arxiv.org/abs/2406.16253)         | Business, Social Sciences, Humanities, Health, Machine Learning                                                  | 675                            | Hypothesis Generation | Publications, Courses, Kaggle | N/A                     | Medium                 | N/A                   | -                |
+| [AAAR-1.0](https://arxiv.org/abs/2410.22394)       | Artificial Intelligence                                                                                          | 1049 (Equation Inference) 100 (Experiment Design) 993 (Paper Weakness) 11,376 (Review Critique) | R&D Workflow          | Publications, OpenReview | Expert Validated        | High                    | N/A                   | -                |
+
+<p align="center">
+$^*$ Ecological validity refers to how well the results of a study can be applied to real-world situations.
+</p>
 
 - **DiscoveryBench (Majumder et al., 2024)**: Derive data-driven discovery hypothesis for a given research goal/question by generating workflows and programs to analyze data.
 
@@ -38,8 +42,6 @@ This repository contains a curated list of papers on evaluating LLMs and agents 
 - **BLADE (Gu et al., 2024)**: Compose a data analysis report for the given research question containing conceptual variables, data transformations, and statistical modeling.
 
 - **ScienceAgentBench (Chen et al., 2024)**: Generate stand-alone programs for solving data-driven discovery tasks, including data processing, model development, data analysis, and information visualization.
-
-- **OpenD5 (Zhong et al., 2023)**: Propose a natural language hypothesis based on a given corpus pair to address the given discovery goal.
 
 - **MLAgentBench (Huang et al., 2024a)**: Edit programs in a given workspace, which also contains the dataset needed, to complete the specified machine learning problem. 
 
@@ -53,9 +55,11 @@ This repository contains a curated list of papers on evaluating LLMs and agents 
 
 - **CHIME (Hsu et al., 2024)**: Produce hierarchical organizations of scientific studies to assist researchers with literature review. 
 
-- **Qi el al., 2023**: Propose hypothesis in biomedical research. 
+- **Qi el al. (2023)**: Propose hypothesis in biomedical research based on instruction and background knowledge. 
 
-- **AAAR-1.0 (Lou at al., 2024)**: Assess correctness of equations based on context, design experiments to validate research ideas and solutions, identify weaknesses in paper submissions, identify whether each segment in human reviews is deficient or not. 
+- **OpenD5 (Zhong et al., 2023)**: Propose a natural language hypothesis based on a given corpus pair to address the given discovery goal.
+
+- **AAAR-1.0 (Lou at al., 2024)**: Evaluate large language models on four tasks in R&D workflow: assess correctness of equations based on context, design experiments to validate research ideas and solutions, identify weaknesses in paper submissions, and identify whether each segment in human reviews is deficient or not. 
 
 
 ## Agents for Science
@@ -146,6 +150,8 @@ This repository contains a curated list of papers on evaluating LLMs and agents 
 
 - Ken Gu, Ruoxi Shang, Ruien Jiang, Keying Kuang, Richard-John Lin, Donghe Lyu, Yue Mao, Youran Pan, Teng Wu, Jiaqian Yu, Yikun Zhang, Tianmai M. Zhang, Lanyi Zhu, Mike A. Merrill, Jeffrey Heer, Tim Althoff. **BLADE: Benchmarking Language Model Agents for Data-Driven Science**. In *arXiv*. https://arxiv.org/abs/2408.09667
 
+- Chao-Chun Hsu, Erin Bransom, Jenna Sparks, Bailey Kuehl, Chenhao Tan, David Wadden, Lucy Lu Wang, and Aakanksha Naik. 2024. **CHIME: LLM-Assisted Hierarchical Organization of Scientific Studies for Literature Review Support**. In *Findings of ACL 2024*. https://arxiv.org/abs/2407.16148
+
 - Qian Huang, Jian Vora, Percy Liang, Jure Leskovec. 2024a. **MLAgentBench: Evaluating Language Agents on Machine Learning Experimentation**. In *ICML 2024*. https://arxiv.org/abs/2310.03302
 
 - Yiming Huang, Jianwen Luo, Yan Yu, Yitong Zhang, Fangyu Lei, Yifan Wei, Shizhu He, Lifu Huang, Xiao Liu, Jun Zhao, Kang Liu. 2024b. **DA-Code: Agent Data Science Code Generation Benchmark for Large Language Models**. In *EMNLP 2024*. https://arxiv.org/abs/2410.07331
@@ -177,6 +183,8 @@ This repository contains a curated list of papers on evaluating LLMs and agents 
 - Meredith Ringel Morris. 2023. **Scientists' Perspectives on the Potential for Generative AI in their Fields**. In *arXiv*. https://arxiv.org/abs/2304.01420
 
 - Huan Ning, Zhenlong Li, Temitope Akinboyewa, M. Naser Lessani. 2024. **An Autonomous GIS Agent Framework for Geospatial Data Retrieval**. In *arXiv*. https://arxiv.org/abs/2407.21024
+
+- Biqing Qi, Kaiyan Zhang, Haoxiang Li, Kai Tian, Sihang Zeng, Zhang-Ren Chen, Jin-Fang Hu, Bowen Zhou. 2023. **Large Language Models are Zero Shot Hypothesis Proposers**. In *Instruction Workshop @ NeurIPS 2023*. https://arxiv.org/abs/2311.05965
 
 - Yusuf Roohani, Andrew Lee, Qian Huang, Jian Vora, Zachary Steinhart, Kexin Huang, Alexander Marson, Percy Liang, Jure Leskovec. 2024. **BioDiscoveryAgent: An AI Agent for Designing Genetic Perturbation Experiments**. In *arXiv*. https://arxiv.org/abs/2405.17631
 
