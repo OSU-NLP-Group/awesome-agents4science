@@ -29,6 +29,7 @@ This repository contains a curated list of papers on evaluating LLMs and agents 
 | [CHIME](https://arxiv.org/abs/2404.02831)          | Literature Review     | Biomedicine                                                                                                      | 472 (100 expert annotated)     | Publications                  | Subset Expert Validated | Low                    | N/A                   | -                |
 | [Qi et al., 2023](https://arxiv.org/abs/2402.13225) | Hypothesis Generation | Biomedicine                                                                                                       | 200                            | Publications                  | N/A                     | Low                    | N/A                   | -                |
 | [OpenD5](https://arxiv.org/abs/2406.16253)         | Hypothesis Generation | Business, Social Sciences, Humanities, Health, Machine Learning                                                  | 675                            | Publications, Courses, Kaggle | N/A                     | Medium                 | N/A                   | -                |
+| [ReviewCritique](https://arxiv.org/abs/2406.16253)       | Reviewing & Meta-Reviewing | Natural Language Processing                                                                                          | 100 papers and corresponding reviews | Publications, OpenReview | Expert Annotated        | Low                    | N/A                   | -                |
 | [AAAR-1.0](https://arxiv.org/abs/2410.22394)       | R&D Workflow          | Artificial Intelligence                                                                                          | 1049 (Equation Inference) 100 (Experiment Design) 993 (Paper Weakness) 11,376 (Review Critique) | Publications, OpenReview | Expert Validated        | High                    | N/A                   | -                |
 
 <p align="center">
@@ -59,7 +60,9 @@ $^*$ Ecological validity refers to how well the results of a study can be applie
 
 - **OpenD5 (Zhong et al., 2023)**: Propose a natural language hypothesis based on a given corpus pair to address the given discovery goal.
 
-- **AAAR-1.0 (Lou at al., 2024)**: Evaluate large language models on four tasks in R&D workflow: assess correctness of equations based on context, design experiments to validate research ideas and solutions, identify weaknesses in paper submissions, and identify whether each segment in human reviews is deficient or not. 
+- **AAAR-1.0 (Lou at al., 2024)**: Evaluate large language models on four tasks in R&D workflow: assess correctness of equations based on context, design experiments to validate research ideas and solutions, identify weaknesses in paper submissions, and identify whether each segment in human reviews is deficient or not.
+
+- **ReviewCritique (Du et al., 2024)**: Examine LLMs ability to assist in paper (meta-)reviewing and its recognizability.  
 
 
 ## Agents for Science
